@@ -10,6 +10,7 @@ defmodule Vimstalled do
     children = [
       # Starts a worker by calling: Vimstalled.Worker.start_link(arg1, arg2, arg3)
       # worker(Vimstalled.Worker, [arg1, arg2, arg3]),
+      Plug.Adapters.Cowboy.child_spec(:http, Vimstalled.ApiRouter, [], [port: 8000])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

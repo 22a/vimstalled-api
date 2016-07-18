@@ -17,7 +17,8 @@ defmodule Vimstalled.Mixfile do
     [applications: [:logger,
                     :cowboy,
                     :plug,
-                    :httpoison]]
+                    :httpoison],
+    mod: {Vimstalled, []}]
   end
 
   # Dependencies can be Hex packages:

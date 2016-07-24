@@ -3,6 +3,7 @@ defmodule Vimstalled.ApiRouter do
 
   plug :match
   plug Plug.Parsers, parsers: [:urlencoded]
+  plug Corsica, origins: "*"
   plug :dispatch
 
   post "/plugins" do
@@ -30,6 +31,6 @@ defmodule Vimstalled.ApiRouter do
     IO.puts inspect conn
     conn
     |> put_resp_content_type("application/json")
-    |> send_resp(200, Poison.encode!(%{name: 4}))
+    |> send_resp(200, Poison.encode!(%{garble: 3833828342}))
   end
 end

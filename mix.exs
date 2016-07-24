@@ -33,6 +33,7 @@ defmodule Vimstalled.Mixfile do
   defp deps do
     [{:cowboy, "~> 1.0.0"},
      {:plug, "~> 1.0"},
+     {:corsica, "~> 0.4"},
      {:poison, "~> 2.0"},
      {:httpoison, "~> 0.9.0"}]
   end

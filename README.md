@@ -1,24 +1,19 @@
-# Vimstalled
+# Vimstalled API
 
-**TODO: Add description**
+This is the api for a stupid [chrome extension](https://github.com/22a/vimstalled) I'm writing.
+
+The interesting thing about this piece of code is that it was written by a person who doesn't know Elixir and has been googling how solve problems as they arise.
+
+I really wouldn't recommend reading it, I'll come back and rewrite this after I've learned how to use the language.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Install bits and bobs
+```
+mix deps.get
+```
 
-  1. Add `vimstalled` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:vimstalled, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `vimstalled` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:vimstalled]]
-    end
-    ```
-
+Fire and forget
+```
+mix run --no-halt
+```
